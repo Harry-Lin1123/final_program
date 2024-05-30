@@ -1,1 +1,6 @@
-<p>post works!</p>
+<!-- 返回按鈕 -->
+<a class="btn" href="/">Back</a>
+<!-- 文章標題 -->
+<h2 *ngIf="post">{{ post.title }}</h2>
+<!-- 文章內容 -->
+<p *ngIf="post">{{ post.content }}</p>
