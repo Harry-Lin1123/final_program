@@ -1,0 +1,7 @@
+header .head_tit {
+  position: absolute;
+  width: min(14vw, 200px);
+  top: 20px;
+  left: 20px;
+  transition: 0.2s ease;
+}
