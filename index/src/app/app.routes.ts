@@ -9,6 +9,6 @@ import { AppComponent } from './app.component';
 export const routes: Routes = [
  {path: '', component: HomeComponent },
  {path:'post/:id', component: PostComponent}
- {path:'', component: AppComponent}
+ //{path:'', component: AppComponent}
 
 ];
