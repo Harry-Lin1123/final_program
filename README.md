@@ -4,9 +4,10 @@
 │ └── component
 │   └── home
 │     ├── main
-│     │  ├── news
 │     │  ├── about
-│     │  └── talent
+│     │  ├── talent
+│     │  ├── news
+│     │  └── audition
 │     ├── webAbout
 │     ├── webTalent
 │     └── webNews
