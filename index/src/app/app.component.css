@@ -33,13 +33,16 @@ ul{
   border: 2px solid #fff;
 }
 .list{
-  display: flex;
   justify-content:space-between;
   text-align: center;
   margin: 0;
 }
 a{
-  text-decoration: none;
+    color: #000;
+    text-decoration: none;
+    outline: none;
+    transition: 0.2s;
+
 }
 .nav_box {
   right: 0;
@@ -48,15 +51,21 @@ a{
   font-family: var(--font_02);
   font-size: clamp(10px, 1vw, 16px);
   font-weight: bold;
+  padding: auto;
 }
 .nav_list {
   display: flex;
   background-color: #ffffffd1;
   margin-right: 20px;
-  padding: 4px 20px;
+  padding: 4px 30px;
   border-radius: 50px;
   border: 2px solid #fff;
 }
 .bg-b{
   background: #000;
 }
+
+header .nav_box a:hover {
+  opacity: .5;
+}
+
