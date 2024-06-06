@@ -20,6 +20,15 @@
 - home
 - footer
 
+#home
+- for迴圈導入網址
+
+#main
+- about
+- talent
+- news
+- audition
+
 #webAbout
 - container
     - banner
