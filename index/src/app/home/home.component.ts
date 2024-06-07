@@ -4,11 +4,17 @@ import { RouterLink } from '@angular/router';
 import { PostComponent } from '../post/post.component';
 import { WebAboutComponent } from '../web-about/web-about.component';
 import { WebTalentComponent } from '../web-talent/web-talent.component';
+import { WebNewsComponent } from '../web-news/web-news.component';
+import { AboutComponent } from '../about/about.component';
+import { TalentComponent } from '../talent/talent.component';
+import { NewsComponent } from '../news/news.component';
+import { AuditionComponent } from '../audition/audition.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterLink,CommonModule,PostComponent,WebAboutComponent,WebTalentComponent],
+  imports: [RouterLink,CommonModule,PostComponent,WebAboutComponent,WebTalentComponent,
+    WebNewsComponent,AboutComponent,TalentComponent,NewsComponent,AuditionComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
