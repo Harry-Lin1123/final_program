@@ -22,7 +22,7 @@ ol, ul {
   margin-bottom: 12px;
   position: relative;
   padding-top: calc(100%*(1080 / 1920));
-  background-color: var(--color-white);
+  background-color: #fff;
 }
 figure {
   line-height: 0;
@@ -71,7 +71,7 @@ fieldset, img {
 }
 .btn_primary {
   display: inline-block;
-  font-family: var(--font-en);
+  font-family: 'Rubik', sans-serif;
   font-size: clamp(16px, 1.5vw, 20px);
   line-height: 1em;
   font-weight: bold;

@@ -1,0 +1,115 @@
+.top_audition {
+  margin-bottom: 120px;
+}
+.a_contents .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+.a_contents {
+  background-color: #fff;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+.a_contents .right {
+  width: 32%;
+  font-weight: bold;
+}
+.a_contents figure {
+  width: 60%;
+}
+.a_contents figure img {
+  width: 100%;
+}
+fieldset, img {
+  border: 0;
+  height: auto;
+}
+.btn_outwrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.btn_outwrap.left {
+  text-align: left;
+}
+.btn_outwrap a:not(:last-of-type) {
+  margin-bottom: 1em;
+}
+.btn_outwrap .btn_primary {
+  width: 100%;
+  text-align: center;
+}
+a {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  transition: 0.2s;
+}
+.btn_primary .txt {
+  display: inline-block;
+  margin: 0;
+  padding-right: 26px;
+  position: relative;
+}
+.btn_primary .txt {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+}
+.btn_primary {
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1em;
+  font-weight: bold;
+  white-space: nowrap;
+  border-radius: 100px;
+  padding: 18px 30px 18px 40px;
+  transition: .3s;
+}
+.btn_primary.bl {
+  background-repeat: no-repeat;
+  background-position: 100% 0;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #27C7FF 0%, #27C7FF 50%, #fff 50%, #fff 100%);
+  color: #27C7FF;
+  border: #27C7FF 2px solid;
+}
+.btn_primary.bl:hover, .btn_secondary.bl:hover {
+  color: #fff;
+}
+.btn_primary:hover, .btn_secondary:hover {
+  transform: scale(.95);
+  transition: .3s;
+  background-position: 0 0;
+}
+.a_contents .bg_area .d_01 {
+  width: 30vw;
+  height: 30vw;
+}
+.a_contents .bg_area .deco {
+  background-image: url(https://hololivepro.com/wp-content/themes/hololive_production/images/top_audition_bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation: rotation 60s linear infinite;
+  animation: rotation 60s linear infinite;
+}
+.a_contents .bg_area .d_02 {
+  width: 60vw;
+  height: 60vw;
+  -webkit-animation: rotation2 60s linear infinite;
+  animation: rotation2 60s linear infinite;
+}
+.a_contents .bg_area .d_03 {
+  width: 90vw;
+  height: 90vw;
+}
