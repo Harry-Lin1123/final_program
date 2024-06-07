@@ -10,6 +10,7 @@
   height: inherit;
   transform: inherit;
 }
+
 .spansize{
   font-size: 20px;
   color: #fff;
@@ -178,6 +179,7 @@ a {
   outline: none;
   transition: 0.2s;
 }
+
 .talent_list li .d_01 {
   top: 10px;
   left: 10px;
