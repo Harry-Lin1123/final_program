@@ -1,1 +1,31 @@
-<p>news works!</p>
+<section class="top_news">
+  <div class="container">
+    <h2 class="top_tit">NEWS
+      <span>ニュース</span>
+    </h2>
+    <div class="four news">
+        <ul class="row" >
+          <li class="col-6 col-md-4 col-xl-3" *ngFor="let item of news">
+            <a href="">
+              <figure>
+                <img src="{{item.img}}" alt="">
+              </figure>
+              <div class="txt_box">
+                <p class="name">{{item.date}}</p>
+                <p>{{item.text}}</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+    </div>
+    <div class="right">
+      <a href="" class="btn_primary bl ">
+        <p class="txt">
+          View More
+          <img src="https://hololivepro.com/wp-content/themes/hololive_production/images/common_icon_btn_wt.svg" alt="">
+          </p>
+      </a>
+    </div>
+  </div>
+
+</section>
