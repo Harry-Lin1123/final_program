@@ -1,71 +1,115 @@
-ul{
-  list-style: none;
+header {
+  text-align: left;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  padding: calc(0.7vw + 12px) 0 calc(0.7vw + 12px) calc(0.7vw + 12px);
+  transition: 0.2s ease;
 }
-.head_tit {
+header .head_tit {
   position: absolute;
   width: min(14vw, 200px);
   top: 20px;
   left: 20px;
   transition: 0.2s ease;
 }
-.navFixed {
-  z-index: 10;
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin-top: 0;
-  min-width: 100%;
-  opacity: 0.94;
-  transition: opacity .5s ease-out;
- }
-.nav-top{
-  position: fixed;
-  position: relative;
-  top: 0%;
-  left: 0;
-  display: block;
-  width: 100%;
-  background-color: #ffffffd1;
+h1 {
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+a {
   color: #000;
+  text-decoration: none;
+  outline: none;
+  transition: 0.2s;
+}
+header .nav_box a:hover {
+  opacity: .5;
+}
+a:hover {
+  transition: 0.2s;
+}
+header .nav_box {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: clamp(10px, 1vw, 16px);
+  font-weight: bold;
+
+}
+.n_01{
+  background-color: #ffffffd1;
+}
+header .nav_box .nav_list {
+  display: flex;
   margin-right: 20px;
   padding: 4px 20px;
   border-radius: 50px;
   border: 2px solid #fff;
+  margin-bottom: 0;
 }
-.list{
-  justify-content:space-between;
-  text-align: center;
-  margin: 0;
+ol, ul {
+  list-style: none;
 }
-a{
-    color: #000;
-    text-decoration: none;
-    outline: none;
-    transition: 0.2s;
-
+/* header .nav_box .nav_list li {
+  margin: 0 .5em;
+} */
+header .nav_box li a {
+  margin: 0 .5em;
+  display: block;
+  padding: 1em;
 }
-.nav_box {
-  right: 0;
+a {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+  transition: 0.2s;
+}
+header .single_btn {
   display: flex;
-  align-items: center;
-  font-family: var(--font_02);
-  font-size: clamp(10px, 1vw, 16px);
-  font-weight: bold;
-  padding: auto;
-}
-.nav_list {
-  display: flex;
-  background-color: #ffffffd1;
   margin-right: 20px;
-  padding: 4px 30px;
+  padding: 14px 20px;
   border-radius: 50px;
   border: 2px solid #fff;
+  margin-bottom: 0;
+  background-color: #27c7ffab;
+  color: #fff;
 }
-.bg-b{
-  background: #000;
+.ex_icon {
+  background-image: url(https://hololivepro.com/wp-content/themes/hololive_production/images/common_icon_link_wt.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-left: 4px;
+  position: relative;
+  bottom: -1px;
 }
-
-header .nav_box a:hover {
-  opacity: .5;
+@media only screen and (max-width: 960px) {
+  header .nav_box .nav_list, header .single_btn, header .lang_btn.pc {
+      display: none ;
+  }
+  .pb50{
+    padding-bottom: 90px;
+    display: block;
+  }
+  .dpb{
+    display: block;
+    right: 0;
+  }
 }
-
+.dpn{
+  display: none;
+}
+.right_0{
+  right: 0;
+}

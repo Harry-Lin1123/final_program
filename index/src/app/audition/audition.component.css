@@ -113,3 +113,16 @@ a {
   width: 90vw;
   height: 90vw;
 }
+@media only screen and (max-width: 768px) {
+  .a_contents .container {
+      display: block;
+  }
+  .a_contents figure {
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+  .a_contents .right {
+    width: 100%;
+    font-size: 14px;
+}
+}

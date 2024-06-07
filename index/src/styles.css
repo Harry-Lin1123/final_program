@@ -14,9 +14,8 @@
 }
 .txt_bg {
   position: absolute;
-  width: calc(100% + 6vw);
+  width: auto;
   height: 10vw;
-  left: -3vw;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
