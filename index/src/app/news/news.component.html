@@ -6,7 +6,7 @@
     <div class="four news">
         <ul class="row" >
           <li class="col-6 col-md-4 col-xl-3" *ngFor="let item of news">
-            <a href="">
+            <a [href]="item.link">
               <figure>
                 <img [src]="item.img" alt="">
               </figure>
