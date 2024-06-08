@@ -8,11 +8,11 @@
 }
 
 .font-jp{
-  font-family: 'Noto Sans JP',sans-serif;
+  font-family: var('Noto Sans JP',sans-serif);
 }
 
 /* 標題 */
-.heading{
+.page_heading{
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -24,7 +24,7 @@
   margin-bottom: 100px;
 }
 
-.heading .maintext{
+.page_heading .maintext{
   display: inline-block;
   margin: 0 3%;
   -webkit-background-clip: text;
@@ -36,7 +36,7 @@
   animation: blur_l 1s cubic-bezier(0,0.39,0.25,1);
 }
 
-.heading .subtext{
+.page_heading .subtext{
   display: inline-block;
   font-size: 14px;
   line-height: 1em;
@@ -189,18 +189,18 @@ ul{
 }
 
 .about .specialty .sec_tit{
-  font-family: #393939;
+  font-family: var(#393939);
   font-weight: bold;
   text-align: center;
   padding-bottom: 50px;
   margin-bottom: 50px;
   border-bottom: solid 1px #E4E4E4;
+  font-size: 16px;
 }
 
 .about .specialty .sec_tit .tit{
   display: block;
   font-size: min(6vw,30px);
-  font-family: var(--font-jp);
   line-height: 2em;
 }
 
@@ -208,6 +208,33 @@ ul{
   display: inline-block;
   font-size: 16px;
   line-height: 1em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about.specialty .spec_li:not(:last-of-type){
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid var(#E4E4E4);
+}
+
+.about .specialty .spec_li .heading{
+  color: #27c7ff;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.about .specialty .spec_li .heading .sub{
+  display: block;
+  font-size: 16px;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+.about .specialty .spec_li .heading .tit{
+  display: block;
+  font-size: min(8vw,40px);
+  line-height: 1.3em;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
