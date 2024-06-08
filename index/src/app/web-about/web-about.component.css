@@ -1,3 +1,16 @@
+/* 共同 */
+.bg-gra{
+  background: linear-gradient(90deg,#5FDCF0,#2AC6FE,#4fa1f0);
+}
+
+.font-en{
+  font-family: 'Rubik','Noto Sans JP',sans-serif;
+}
+
+.font-jp{
+  font-family: 'Noto Sans JP',sans-serif;
+}
+
 /* 標題 */
 .heading{
   display: flex;
@@ -14,11 +27,9 @@
 .heading .maintext{
   display: inline-block;
   margin: 0 3%;
-  background: linear-gradient(90deg,#5FDCF0,#2AC6FE,#4fa1f0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #27c7ff;
-  font-family: 'Rubik','Noto Sans JP',sans-serif;
   font-size: min(9vw,100px);
   font-weight: bold;
   line-height: 1.2em;
@@ -27,12 +38,10 @@
 
 .heading .subtext{
   display: inline-block;
-  font-family: 'Noto Sans JP',sans-serif;
   font-size: 14px;
   line-height: 1em;
   padding: 4px 10px;
   color: #fff;
-  background: linear-gradient(90deg,#5FDCF0,#2AC6FE,#4fa1f0);
   text-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
   animation: blur_r 1s cubic-bezier(0,0.39,0.25,1);
 }
@@ -64,7 +73,7 @@
 }
 
 /* 介紹 */
-.about{
+.page_container{
   max-width: 1100px;
   width: 90%;
   margin: 0 auto;
@@ -97,6 +106,7 @@
 }
 
 @media screen and (max-width: 769px) {
+  /* intro */
   .heading{
     padding: 150px 0 50px;
     margin-bottom: 50px;
@@ -107,6 +117,7 @@
   .sp-only{
     display: block;
   }
+  /* slideshow */
   .about .slideshow .outwrap{
     height: 50vw;
   }
@@ -162,7 +173,6 @@ ul{
   margin: 0 1vw 3vw;
 }
 
-
 .about .slideshow .wrap .ss_img img{
   width: 24vw;
   border-radius: 10px;
@@ -170,4 +180,34 @@ ul{
 
 .about img{
   width: 100%;
+}
+
+/* specialty */
+.about .specialty{
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.about .specialty .sec_tit{
+  font-family: #393939;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: solid 1px #E4E4E4;
+}
+
+.about .specialty .sec_tit .tit{
+  display: block;
+  font-size: min(6vw,30px);
+  font-family: var(--font-jp);
+  line-height: 2em;
+}
+
+.about .specialty .sec_tit .sub{
+  display: inline-block;
+  font-size: 16px;
+  line-height: 1em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
