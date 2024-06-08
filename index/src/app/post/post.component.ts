@@ -17,6 +17,8 @@ export class PostComponent implements OnInit{
    // 假數據，代表部落格文章的內容
    post?: { id: number,img:string, date: string,text:string, content: string };
    constructor(private route: ActivatedRoute) { }
+
+
    ngOnInit(): void {
      // 從路由參數中獲取文章的ID
      this.route.params.subscribe(params => {
@@ -24,9 +26,10 @@ export class PostComponent implements OnInit{
      // 根據文章的ID查詢相應的文章數據，這裡假設有一個函數可以通過ID查詢文章
      this.post = this.getPostById(this.postId);
      });
-     }
+    }
+
      // 根據文章ID查詢文章
-     getPostById(id: number): { id: number,img:string, date: string,text:string, content: string } | undefined {
+    getPostById(id: number): { id: number,img:string, date: string,text:string, content: string } | undefined {
      // 在這裡實現根據文章ID查詢文章的邏輯，這裡使用假數據來模擬
      const posts = [
       {id:1,img:'./assets/img/20240606_main.png', date:'2024.06.06',text:'「ホロライブ」初の本格エンタメ参考書、『ホロライブ学力診断　中学5教科』発売決定！',content:'カバー株式会社（本社：港区、代表取締役社長：谷郷元昭）は、弊社が運営する「ホロライブプロダクション」傘下の女性VTuberグループ「ホロライブ」において、株式会社Gakken より、初のエンタメ参考書『ホロライブ学力診断　中学5教科』の発売が決定したことをお知らせいたします。Gakkenとホロライブ初のコラボ書籍となる、エンタメ参考書『ホロライブ学力診断　中学5教科』の発売が「7月25日（木）」に決定いたしました。巻末にスペシャルコンテンツを収録した特別版も同時発売いたします。現在、受注予約を受け付けております。'},
