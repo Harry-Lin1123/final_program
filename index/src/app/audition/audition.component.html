@@ -20,7 +20,7 @@
           <a href="" class="btn_primary bl "*ngFor="let item of btn">
             <p class="txt">
               {{item.id}}
-              <img src="{{item.img}}" alt="">
+              <img [src]="item.img" alt="">
               </p>
           </a>
         </div>

@@ -1,0 +1,64 @@
+/* 標題 */
+.heading{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background: url('../../assets/img/about/head_bg.svg') repeat;
+  text-align: center;
+  font-weight: bold;
+  padding: 150px 0 100px;
+  margin-bottom: 100px;
+}
+
+.heading .maintext{
+  display: inline-block;
+  margin: 0 3%;
+  background: linear-gradient(90deg,#5FDCF0,#2AC6FE,#4fa1f0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #27c7ff;
+  font-family: 'Rubik','Noto Sans JP',sans-serif;
+  font-size: min(9vw,100px);
+  font-weight: bold;
+  line-height: 1.2em;
+  animation: blur_l 1s cubic-bezier(0,0.39,0.25,1);
+}
+
+.heading .subtext{
+  display: inline-block;
+  font-family: 'Noto Sans JP',sans-serif;
+  font-size: 14px;
+  line-height: 1em;
+  padding: 4px 10px;
+  color: #fff;
+  background: linear-gradient(90deg,#5FDCF0,#2AC6FE,#4fa1f0);
+  text-shadow: 1px 1px 1px rgb(0 0 0 / 20%);
+  animation: blur_r 1s cubic-bezier(0,0.39,0.25,1);
+}
+
+@keyframes blur_l{
+  0%{
+    opacity: 0;
+    transform: translateX(-1rem);
+    filter: blur(.5em);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+@keyframes blur_r{
+  0%{
+    opacity: 0;
+    transform: translateX(1rem);
+    filter: blur(.5em);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}

@@ -57,16 +57,102 @@
 <!-- <app-root></app-root> -->
 <router-outlet></router-outlet>
 <!-- <app-web-about></app-web-about> -->
-<main>
-    <button>aaaaa</button>
-</main>
-<main>
-  <button>aaaaa</button>
-</main>
-<main>
-  <button>aaaaa</button>
-</main>
-<main>
-  <button>aaaaa</button>
-</main>
+<div class="share_wrap">
+  <h2 class="tit">SHARE</h2>
+  <div class="twitter"><a [href]="twitter_link" target="_blank"><img [src]="twitter_img" alt="#ホロライブプロダクションでツイート"></a></div>
+  <ul class="icons">
+      <li class="li" *ngFor="let item of icons">
+          <a [href]="item.link" target="_blank"><img [src]="item.img" alt="reddit"></a>
+      </li>
+  </ul>
+</div>
+<footer>
+  <div class="container">
+    <div class="foot_box">
+    <!---->
+      <div class="left">
+      <a href="" class="foot_logo"><img src="https://hololivepro.com/wp-content/themes/hololive_production/images/common_logo_holopro_wt.svg" alt="hololive production"></a>
+      <nav class="foot_nav">
+        <ul class="nav_01">
+          <li><a href="about">ABOUT</a></li>
+          <li><a href="">TALENT</a></li>
+          <li><a href="news">NEWS</a></li>
+          <li><a href="" target="_blank">AUDITION<span class="ex_icon"></span></a></li>
+        </ul>
+          <ul class="nav_02">
+          <li><a href="https://hololivepro.com/collaboration">COLLABORATION</a></li>
+          <li><a href="https://shop.hololivepro.com/" target="_blank">OFFICIAL SHOP<span class="ex_icon"></span></a></li>
+          <li><a href="https://schedule.hololive.tv/" target="_blank">HOLODULE<span class="ex_icon"></span></a></li>
+        </ul>
+        <ul class="nav_03">
+          <li><a href="https://cover-corp.com/" target="_blank">会社概要<span class="ex_icon"></span></a></li>
+          <li><a href="https://cover-corp.com/privacy/" target="_blank">プライバシーポリシー<span class="ex_icon"></span></a></li>
+          <li><a href="https://hololivepro.com/request-to-minors/">未成年の方々へのお願い</a></li>
+          <li><a href="https://hololivepro.com/terms/">二次創作ガイドライン</a></li>
+          <li><a href="https://hololivepro.com/question/">よくある質問</a></li>
+          <li><a href="https://hololivepro.com/supporter/">サポーターガイドライン</a></li>
+        </ul>
+      </nav>
+      </div>
+    <!---->
+    <!---->
+    <div class="right">
 
+      <div class="content">
+        <p class="stit">hololive</p>
+        <ul>
+          <li><a href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg" target="_blank">YouTube<span class="ex_icon"></span></a></li>
+          <li><a href="https://twitter.com/hololivetv" target="_blank">X<span class="ex_icon"></span></a></li>
+          <li><a href="https://www.tiktok.com/@hololive_official" target="_blank">TikTok<span class="ex_icon"></span></a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <p class="stit">hololive Indonesia</p>
+        <ul>
+          <li><a href="https://www.youtube.com/channel/UCfrWoRGlawPQDQxxeIDRP0Q" target="_blank">YouTube<span class="ex_icon"></span></a></li>
+          <li><a href="https://twitter.com/hololive_Id" target="_blank">X<span class="ex_icon"></span></a></li>
+          <li><a href="https://www.facebook.com/people/Hololive-Indonesia/100063546336394/" target="_blank">Facebook<span class="ex_icon"></span></a></li>
+          <li><a href="https://www.tiktok.com/@hololiveid_official" target="_blank">TikTok<span class="ex_icon"></span></a></li>
+          <li><a href="https://www.instagram.com/hololiveid_official/" target="_blank">Instagram<span class="ex_icon"></span></a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <p class="stit">hololive English</p>
+        <ul>
+          <li><a href="https://www.youtube.com/channel/UCotXwY6s8pWmuWd_snKYjhg" target="_blank">YouTube<span class="ex_icon"></span></a></li>
+          <li><a href="https://twitter.com/hololive_En" target="_blank">X<span class="ex_icon"></span></a></li>
+          <li><a href="https://www.facebook.com/hololivetv" target="_blank">Facebook<span class="ex_icon"></span></a></li>
+          <li><a href="https://www.tiktok.com/@hololive_english" target="_blank">TikTok<span class="ex_icon"></span></a></li>
+          <li><a href="https://www.reddit.com/r/Hololive/" target="_blank">Reddit<span class="ex_icon"></span></a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <p class="stit">hololive DEV_IS</p>
+        <ul>
+          <li><a href="https://www.youtube.com/@hololiveDEV_IS" target="_blank">YouTube<span class="ex_icon"></span></a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <p class="stit">HOLOSTARS</p>
+        <ul>
+          <li><a href="https://www.youtube.com/channel/UCWsfcksUUpoEvhia0_ut0bA" target="_blank">YouTube<span class="ex_icon"></span></a></li>
+          <li><a href="https://twitter.com/holostarstv" target="_blank">X<span class="ex_icon"></span></a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <p class="stit">HOLOSTARS English</p>
+        <ul>
+          <li><a href="https://www.youtube.com/channel/UCJxZpzx4wHzEYD-eCiZPikg" target="_blank">YouTube<span class="ex_icon"></span></a></li>
+          <li><a href="https://twitter.com/hololivepro_EN" target="_blank">X<span class="ex_icon"></span></a></li>
+          <li><a href="https://www.tiktok.com/@holostars_english" target="_blank">TikTok<span class="ex_icon"></span></a></li>
+        </ul>
+      </div>
+    </div>
+    <!---->
+    </div>
+    <div class="foot_copy">
+      <small>© 2016 COVER Corp.</small>
+    </div>
+
+  </div>
+  </footer>
