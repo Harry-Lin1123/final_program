@@ -26,4 +26,6 @@
   font-family: 'Rubik', 'Noto Sans JP', serif;
   pointer-events: none;
   z-index: -1;
+  font-size: 40px;
+  font-weight:bold;
 }
