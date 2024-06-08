@@ -2,9 +2,26 @@
   <h1 class="maintext">{{title}}</h1>
   <p class="subtext">{{subtitle}}</p>
 </div>
-<!-- 返回按鈕 -->
+<div class="container">
+  <article class="single_box">
+    <h1 *ngIf="post">
+      <span *ngIf="post">{{ post.date }}</span>
+       {{post.text}}
+    </h1>
+    <figure>
+      <img  *ngIf="post" width="1024" height="576" [src]="post.img" sizes="(max-width: 1024px) 100vw, 1024px">
+    </figure>
+    <div class="txt_box">
+      <p *ngIf="post">
+        {{post.content}}
+      </p>
+    </div>
+  </article>
+</div>
+<!--
+返回按鈕
 <a class="btn" href="/">Back</a>
-<!-- 文章標題 -->
+文章標題
 <h2 *ngIf="post">{{ post.title }}</h2>
-<!-- 文章內容 -->
-<p *ngIf="post">{{ post.content }}</p>
+文章內容
+<p *ngIf="post">{{ post.content }}</p> -->
