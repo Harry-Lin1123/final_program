@@ -107,4 +107,67 @@
   .sp-only{
     display: block;
   }
+  .about .slideshow .outwrap{
+    height: 50vw;
+  }
+  .about .slideshow .wrap .ss_img img.rl{
+    margin: 3vw 2vw 0;
+  }
+  .about .slideshow .wrap .ss_img img.rr{
+    margin: 0 2vw 3vw;
+  }
+  .about .slideshow .wrap .ss_img img{
+    width: 70vw;
+  }
+}
+
+/* 橫幅圖片 */
+.about .slideshow{
+  width: 100%;
+  margin-bottom: 150px;
+  overflow-x: hidden;
+}
+
+.about .slideshow .outwrap{
+  display: flex;
+  align-items: center;
+  height: 20vw;
+}
+
+.about .slideshow .wrap{
+  display: flex;
+  align-items: center;
+  animation: loopslide 60s infinite linear;
+}
+@keyframes loopslide{
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+
+ul{
+  list-style: none;
+}
+
+.about .slideshow .wrap .ss_img img.rl{
+  transform: rotate(-3deg);
+  margin: 3vw 1vw 0;
+}
+
+.about .slideshow .wrap .ss_img img.rr{
+  transform: rotate(3deg);
+  margin: 0 1vw 3vw;
+}
+
+
+.about .slideshow .wrap .ss_img img{
+  width: 24vw;
+  border-radius: 10px;
+}
+
+.about img{
+  width: 100%;
 }

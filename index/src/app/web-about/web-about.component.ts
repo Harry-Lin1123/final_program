@@ -12,6 +12,15 @@ export class WebAboutComponent {
   bg='../assets/img/about/head_bg.svg';
   intro_pc='../assets/img/about/hololive_infographic_pc.png';
   intro_sp='../assets/img/about/hololive_infographic_sp.png';
+  slide1='../assets/img/about/slide1';
+  slide2='../assets/img/about/slide2';
+  slide3='../assets/img/about/slide3';
+  slide4='../assets/img/about/slide4';
+  slide5='../assets/img/about/slide5';
+  slide6='../assets/img/about/slide6';
+  slide7='../assets/img/about/slide7';
+  slide8='../assets/img/about/slide8';
+
 
   title = 'ABOUT';
   subtitle = 'ホロライブプロダクションとは？';
