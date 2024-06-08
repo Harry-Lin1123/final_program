@@ -12,7 +12,7 @@ import { WebNewsComponent } from './web-news/web-news.component';
 
 export const routes: Routes = [
  {path: '', component: HomeComponent },
- {path:'post/:id', component: PostComponent},
+ {path:'news/:id', component: PostComponent},
  {path:'about', component: WebAboutComponent},
  {path:'talent', component: WebTalentComponent},
  {path:'news', component: WebNewsComponent}

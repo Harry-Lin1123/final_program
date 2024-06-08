@@ -1,1 +1,40 @@
-<p>web-news works!</p>
+<div class="heading">
+  <h1 class="maintext">{{title}}</h1>
+  <p class="subtext">{{subtitle}}</p>
+</div>
+<div class="container">
+  <div class="news_container">
+    <ul class="inner">
+      <li  *ngFor="let item of news">
+        <a [routerLink]="['/news', item.id]" class="news_li">
+          <div class="img_box">
+            <figure>
+              <img src="{{item.img}}" alt="">
+            </figure>
+          </div>
+          <div class="txt_box">
+            <p class="date">{{item.date}}</p>
+            <h2 class="tit">{{item.title}}</h2>
+            <p class="txt">
+              {{item.txt}}
+              <span>...</span>
+            </p>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="pagenation">
+      <span aria-current="page" class="page-numbers current">1</span>
+      <a class="page-numbers" href="/2">2</a>
+      <span class="page-numbers dots">…</span>
+      <a class="page-numbers" href="">36</a>
+      <a class="next page-numbers" href=""><img src="https://hololivepro.com/wp-content/themes/hololive_production/images/common_icon_pagenaition.svg"></a>
+    </div>
+  </div>
+  <div class="back_top">
+    <a href="" class="btn_secondary back">
+      <p class="txt">TOPへ戻る</p>
+  </a>
+  </div>
+</div>
+

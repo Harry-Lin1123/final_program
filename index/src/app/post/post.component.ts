@@ -10,6 +10,8 @@ import { ActivatedRoute } from '@angular/router';
   styleUrl: './post.component.css'
 })
 export class PostComponent implements OnInit{
+  title = 'NEWS';
+  subtitle = 'ニュース';
    // 從路由參數中獲取文章的ID，使用問號將其標記為可選的
    postId?: number;
    // 假數據，代表部落格文章的內容
