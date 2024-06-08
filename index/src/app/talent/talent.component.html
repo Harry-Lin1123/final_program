@@ -17,10 +17,10 @@
   <ul class="talent_list">
     <li class="left" *ngFor="let item of talent_people">
      <figure>
-        <img src="{{item.img}}" alt="">
+        <img [src]="item.img" alt="">
       </figure>
       <p class="g_name">
-        <img src="{{item.img_logo}}" alt="">
+        <img [src]="item.img_logo" alt="">
       </p>
       <p class="tl_txt">Open</p>
       <div class="open_box">

@@ -8,7 +8,7 @@
           <li class="col-6 col-md-4 col-xl-3" *ngFor="let item of news">
             <a href="">
               <figure>
-                <img src="{{item.img}}" alt="">
+                <img [src]="item.img" alt="">
               </figure>
               <div class="txt_box">
                 <p class="name">{{item.date}}</p>

@@ -9,7 +9,7 @@
         <a [routerLink]="['/news', item.id]" class="news_li">
           <div class="img_box">
             <figure>
-              <img src="{{item.img}}" alt="">
+              <img [src]="item.img" alt="">
             </figure>
           </div>
           <div class="txt_box">
