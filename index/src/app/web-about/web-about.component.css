@@ -97,6 +97,10 @@
 }
 
 @media screen and (max-width: 769px) {
+  .heading{
+    padding: 150px 0 50px;
+    margin-bottom: 50px;
+  }
   .pc-only{
     display: none;
   }
