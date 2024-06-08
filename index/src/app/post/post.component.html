@@ -12,7 +12,7 @@
       <img  *ngIf="post" width="1024" height="576" [src]="post.img" sizes="(max-width: 1024px) 100vw, 1024px">
     </figure>
     <div class="txt_box">
-      <p *ngIf="post">
+      <p *ngIf="post" class="pre-formatted">
         {{post.content}}
       </p>
     </div>
