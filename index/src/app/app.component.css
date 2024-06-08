@@ -102,14 +102,20 @@ header .single_btn {
     padding-bottom: 90px;
     display: block;
   }
-  .dpb{
+  .dpn{
     display: block;
     right: 0;
   }
-}
-.dpn{
-  display: none;
+  .li_move{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 .right_0{
   right: 0;
+}
+.mr_16{
+  margin-right: 16px;
+  padding-left: 10px;
+  margin-top: 8px;
 }
