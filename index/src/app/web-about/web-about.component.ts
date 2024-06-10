@@ -20,9 +20,9 @@ export class WebAboutComponent {
   slide6='../assets/img/about/slide6.png';
   slide7='../assets/img/about/slide7.png';
   slide8='../assets/img/about/slide8.png';
-  special01_1='../assests/img/about/special01_1.png';
-  special01_2='../assests/img/about/special01_2.png';
-  special01_3='../assests/img/about/special01_3.png';
+  special01_1='../assets/img/about/special01_1.png';
+  special01_2='../assets/img/about/special01_2.png';
+  special01_3='../assets/img/about/special01_3.png';
 
 
   title = 'ABOUT';

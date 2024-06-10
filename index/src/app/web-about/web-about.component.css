@@ -130,6 +130,7 @@
   .about .slideshow .wrap .ss_img img{
     width: 70vw;
   }
+  /* specialty */
   .img_box li{
     width: calc((100%/2)-6%);
     margin: 0 3% 6% 3%;
@@ -273,4 +274,12 @@ ul{
   transform: translate(-50%,-50%) rotate(-5deg);
   border-radius: 10px;
   z-index: -1;
+}
+
+.img_box img .alignnon{
+  align-items: none;
+}
+
+.img_box img .size-full{
+  width: 100%;
 }
