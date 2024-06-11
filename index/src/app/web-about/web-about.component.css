@@ -247,7 +247,7 @@ ul{
 .img_box{
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: row;
   margin-bottom: 20px;
 }
@@ -270,7 +270,7 @@ ul{
   height: 100%;
   top: 48%;
   left: 50%;
-  background-color: var(#27c7ff);
+  background-color: #27c7ff;
   transform: translate(-50%,-50%) rotate(-5deg);
   border-radius: 10px;
   z-index: -1;
