@@ -66,42 +66,32 @@
               </li>
               <li class="ja current last">
                 <span class="bogo-language-name">
-                  <a href="">jp</a>
+                  <a href="">JP</a>
                 </span>
               </li>
             </ul>
           </div>
           <ul class="txt_nav nav_01">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li *ngFor="let item of nav1"><a href="">{{item.link}}</a></li>
           </ul>
           <ul class="txt_nav nav_02">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li *ngFor="let item of nav2"><a href="">{{item.link}}</a></li>
           </ul>
           <ul class="txt_nav nav_03">
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li *ngFor="let item of nav3"><a href="">{{item.link}}</a></li>
           </ul>
         </nav>
         <div class="right">
           <ul>
             <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
+            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
+            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
+            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
+            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
+            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
+            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
+            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
           </ul>
         </div>
       </div>
