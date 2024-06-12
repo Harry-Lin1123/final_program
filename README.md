@@ -6,6 +6,7 @@
 │   │  ├── about
 │   │  ├── talent
 │   │  ├── news
+|   |  |  └──post
 │   │  └── audition
 │   ├── webAbout
 │   ├── webTalent
@@ -24,9 +25,20 @@
 
 #main
 - about
+    - title
+    - text
+    - viewmore
 - talent
+    - title
+    - roll
+    - talentlist
 - news
+    - title
+    - news
+    - viewmore
 - audition
+    - title
+    - container
 
 #webAbout
 - container
@@ -37,3 +49,11 @@
         - specialty
 - backhome
 - share
+
+#webNews
+- container
+    - news
+    - pagechanges
+- backhome
+- share
+
