@@ -2,15 +2,14 @@
 ```
 ├── index
 │ └── component
-│   └── home
-│     ├── main
-│     │  ├── about
-│     │  ├── talent
-│     │  ├── news
-│     │  └── audition
-│     ├── webAbout
-│     ├── webTalent
-│     └── webNews
+│   ├── home
+│   │  ├── about
+│   │  ├── talent
+│   │  ├── news
+│   │  └── audition
+│   ├── webAbout
+│   ├── webTalent
+│   └── webNews
 │
 └── README.md
 ```
