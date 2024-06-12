@@ -12,28 +12,26 @@ export class WebAboutComponent {
   bg='../assets/img/about/head_bg.svg';
   intro_pc='../assets/img/about/hololive_infographic_pc.png';
   intro_sp='../assets/img/about/hololive_infographic_sp.png';
-  slide1='../assets/img/about/slide1.png';
-  slide2='../assets/img/about/slide2.png';
-  slide3='../assets/img/about/slide3.png';
-  slide4='../assets/img/about/slide4.png';
-  slide5='../assets/img/about/slide5.png';
-  slide6='../assets/img/about/slide6.png';
-  slide7='../assets/img/about/slide7.png';
-  slide8='../assets/img/about/slide8.png';
-  special01_1='../assets/img/about/special01_1.png';
-  special01_2='../assets/img/about/special01_2.png';
-  special01_3='../assets/img/about/special01_3.png';
-  special02_1='../assets/img/about/special02_1.png';
-  special02_2='../assets/img/about/special02_2.png';
-  special02_3='../assets/img/about/special02_3.png';
-  special02_4='../assets/img/about/special02_4.png';
-  special02_5='../assets/img/about/special02_5.png';
-  special02_6='../assets/img/about/special02_6.png';
-  special03_1='../assets/img/about/special03_1.png';
-  special03_2='../assets/img/about/special03_2.png';
-  special03_3='../assets/img/about/special03_3.png';
-
-
+  slide=[{img:'../assets/img/about/slide1.png'},
+    {img:'../assets/img/about/slide2.png'},
+    {img:'../assets/img/about/slide3.png'},
+    {img:'../assets/img/about/slide4.png'},
+    {img:'../assets/img/about/slide5.png'},
+    {img:'../assets/img/about/slide6.png'},
+    {img:'../assets/img/about/slide7.png'},
+    {img:'../assets/img/about/slide8.png'},]
+  special01=[{img:'../assets/img/about/special01_1.png'},
+    {img:'../assets/img/about/special01_2.png'},
+    {img:'../assets/img/about/special01_3.png'},]
+  special02=[{img:'../assets/img/about/special02_1.png'},
+    {img:'../assets/img/about/special02_2.png'},
+    {img:'../assets/img/about/special02_3.png'},
+    {img:'../assets/img/about/special02_4.png'},
+    {img:'../assets/img/about/special02_5.png'},
+    {img:'../assets/img/about/special02_6.png'}]
+  special03=[{img:'../assets/img/about/special03_1.png'},
+    {img:'../assets/img/about/special03_2.png'},
+    {img:'../assets/img/about/special03_3.png'},]
 
   title = 'ABOUT';
   subtitle = 'ホロライブプロダクションとは？';

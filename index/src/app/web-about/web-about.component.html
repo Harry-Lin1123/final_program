@@ -18,24 +18,10 @@
   <div class="slideshow">
           <div class="outwrap">
             <ul class="wrap">
-              <li class="ss_img"><img decoding="async" loading="eager" class="rl" [src]="slide1" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rr" [src]="slide2" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rl" [src]="slide3" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rr" [src]="slide4" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rl" [src]="slide5" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rr" [src]="slide6" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rl" [src]="slide7" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rr" [src]="slide8" alt="「ホロライブプロダクション」_ABOUT"></li>
+              <li class="ss_img" *ngFor="let item of slide"><img decoding="async" loading="eager" class="rl" [src]="item.img" alt="「ホロライブプロダクション」_ABOUT"></li>
             </ul>
             <ul class="wrap">
-              <li class="ss_img"><img decoding="async" loading="eager" class="rl" [src]="slide1" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rr" [src]="slide2" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rl" [src]="slide3" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rr" [src]="slide4" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rl" [src]="slide5" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rr" [src]="slide6" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rl" [src]="slide7" alt="「ホロライブプロダクション」_ABOUT"></li>
-              <li class="ss_img"><img decoding="async" loading="eager" class="rr" [src]="slide8" alt="「ホロライブプロダクション」_ABOUT"></li>
+              <li class="ss_img" *ngFor="let item of slide"><img decoding="async" loading="eager" class="rl" [src]="item.img" alt="「ホロライブプロダクション」_ABOUT"></li>
             </ul>
           </div>
   </div>
@@ -52,17 +38,9 @@
             <span class="tit bg-gra">{{specialty1}}</span>
           </h3>
           <ul class="img_box">
-            <li >
+            <li *ngFor="let item of special01">
               <div class="li_before"></div>
-              <img decoding="async" loading="lazy" [src]="special01_1" alt="">
-            </li>
-            <li>
-              <div class="li_before"></div>
-              <img decoding="async" loading="lazy" [src]="special01_2" alt="">
-            </li>
-            <li>
-              <div class="li_before"></div>
-              <img decoding="async" loading="lazy" [src]="special01_3" alt="">
+              <img decoding="async" loading="lazy" [src]="item.img" alt="">
             </li>
           </ul>
           <div class="txt">
@@ -81,29 +59,9 @@
           </h3>
           <div class="container">
             <ul class="img_box row">
-              <li class="">
+              <li class=""  *ngFor="let item of special02">
                 <div class="li_before"></div>
-                <img decoding="async" loading="lazy" [src]="special02_1" alt="">
-              </li>
-              <li class="">
-                <div class="li_before "></div>
-                <img decoding="async" loading="lazy" [src]="special02_2" alt="">
-              </li>
-              <li class="">
-                <div class="li_before"></div>
-                <img decoding="async" loading="lazy" [src]="special02_3" alt="">
-              </li>
-              <li class="">
-                <div class="li_before"></div>
-                <img decoding="async" loading="lazy" [src]="special02_4" alt="">
-              </li>
-              <li class="">
-                <div class="li_before"></div>
-                <img decoding="async" loading="lazy" [src]="special02_5" alt="">
-              </li>
-              <li class="">
-                <div class="li_before"></div>
-                <img decoding="async" loading="lazy" [src]="special02_6" alt="">
+                <img decoding="async" loading="lazy" [src]="item.img" alt="">
               </li>
             </ul>
           </div>
@@ -120,17 +78,9 @@
             <span class="tit bg-gra">{{specialty3}}</span>
           </h3>
           <ul class="img_box">
-            <li>
+            <li *ngFor="let item of special03">
               <div class="li_before"></div>
-              <img decoding="async" loading="lazy" [src]="special03_1" alt="">
-            </li>
-            <li>
-              <div class="li_before"></div>
-              <img decoding="async" loading="lazy" [src]="special03_2" alt="">
-            </li>
-            <li>
-              <div class="li_before"></div>
-              <img decoding="async" loading="lazy" [src]="special03_3" alt="">
+              <img decoding="async" loading="lazy" [src]="item.img" alt="">
             </li>
           </ul>
           <div class="txt">
