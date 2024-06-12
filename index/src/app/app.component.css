@@ -441,6 +441,7 @@ header .lang_btn li a{
   line-height: 1.2em;
   margin: 0;
   padding: 0;
+  display: inline-block;
 }
 .global_nav .menu_box .left .txt_nav li a{
   position: relative;
@@ -459,21 +460,29 @@ header .lang_btn li a{
   z-index: -1;
   transition: .6s;
 }
-
+.global_nav .menu_box .left .txt_nav li a:hover::before {
+  width: 100%;
+  transition: .6s cubic-bezier(0, 0.37, 0.52, 0.99);
+}
+.global_nav .menu_box .left .txt_nav li a:hover {
+  left: .2em;
+  transition: .4s ease-in-out;
+}
 .global_nav .menu_box .left .txt_nav.nav_02 li a {
   font-size: 1.4em;
   line-height: 1.8em;
   padding: 0;
   margin: 0;
+  display: inline-block;
 }
 
 .global_nav .menu_box .left .txt_nav.nav_03 li a {
   font-size: 0.9em;
   font-weight: 400;
   line-height: 1.2em;
-  margin: 0;
-  padding-left: 0;
-  padding-bottom: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  display: inline-block;
 }
 
 .global_nav .menu_box .right{
@@ -498,4 +507,33 @@ header .lang_btn li a{
 
 .global_nav .menu_box .right li a img{
   width: 100%;
+}
+
+.dpn{
+  display: none;
+}
+.dpb{
+  display: block;
+}
+@media only screen and (max-width: 960px) {
+  .global_nav .menu_box .left {
+      width: 100%;
+      padding: 0;
+      max-height: none;
+  }
+  .global_nav .menu_box {
+    flex-wrap: wrap;
+    top: 40px;
+    max-height: 90vh;
+    overflow-y: scroll;
+    width: 88%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.global_nav .menu_box .right {
+  width: 100%;
+  padding: 0;
+  margin-bottom: 80px;
+  max-height: none;
+}
 }

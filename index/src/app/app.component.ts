@@ -25,12 +25,21 @@ export class AppComponent {
   }]
 
     nav_menu1='assets/img/nav_menu/nav_menu1.png';
+    nav_menu=[{img:'assets/img/nav_menu/nav_menu1.png'},
+      {img:'assets/img/nav_menu/nav_menu2.png'},
+      {img:'assets/img/nav_menu/nav_menu3.png'},
+      {img:'assets/img/nav_menu/nav_menu4.png'},
+      {img:'assets/img/nav_menu/nav_menu5.png'},
+      {img:'assets/img/nav_menu/nav_menu6.png'},
+      {img:'assets/img/nav_menu/nav_menu7.png'},
+      {img:'assets/img/nav_menu/nav_menu8.png'},
+      {img:'assets/img/nav_menu/nav_menu9.png'},
+    ]
 
-
-    nav1=[{link:'ABOUT'},
-      {link:'TALENT'},
-      {link:'NEWS'},
-      {link:'AUDITION'},
+    nav1=[{web:'about',link:'ABOUT'},
+      {web:'',link:'TALENT'},
+      {web:'news',link:'NEWS'},
+      {web:'',link:'AUDITION'},
     ]
     nav2=[{link:'COLLABORATION'},
       {link:'OFFICIAL SHOP'},
@@ -42,5 +51,20 @@ export class AppComponent {
       {link:'よくある質問'},
       {link:'サポーターガイドライン'},
     ]
+    click=false;
+    isClick:string='nav_trigger_outer';
+    isClick2:string='global_nav active dpn';
+    OnClick_1(){
+      this.click=!this.click;
+      if(this.click){
+       this.click=true;
+      this.isClick2='global_nav active dpb';
+      this.isClick='nav_trigger_outer active' ;
+      }else{
+        this.isClick2='global_nav active dpn';
+        this.isClick='nav_trigger_outer' ;
+      }
 
+
+    }
 }

@@ -50,10 +50,10 @@
       <li class="li_move"><img src="./assets/img/toggleLine.png" alt=""class="dpn"></li>
       <li class="li_move"><img src="./assets/img/toggleLine.png" alt=""class="dpn"></li>
     </ul> -->
-    <div class="nav_trigger_outer active">
+    <div [class]="isClick" (click)="OnClick_1()">
       <div class="nav_trigger"></div>
     </div>
-    <div class="global_nav active">
+    <div [class]="isClick2">
       <div class="nav_bg"></div>
       <div class="menu_box">
         <nav class="left">
@@ -72,7 +72,7 @@
             </ul>
           </div>
           <ul class="txt_nav nav_01">
-            <li *ngFor="let item of nav1"><a href="">{{item.link}}</a></li>
+            <li *ngFor="let item of nav1"><a [href]="item.web">{{item.link}}</a></li>
           </ul>
           <ul class="txt_nav nav_02">
             <li *ngFor="let item of nav2"><a href="">{{item.link}}</a></li>
@@ -83,20 +83,11 @@
         </nav>
         <div class="right">
           <ul>
-            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
-            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
-            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
-            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
-            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
-            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
-            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
-            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
-            <li><a href=""><img [src]="nav_menu1" alt=""></a></li>
+            <li *ngFor="let item of nav_menu"><a href="" ><img [src]="item.img" alt=""></a></li>
           </ul>
         </div>
       </div>
     </div>
-
   </nav>
 
 </header>
