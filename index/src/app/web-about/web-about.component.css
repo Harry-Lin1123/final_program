@@ -7,9 +7,6 @@
   font-family: 'Rubik','Noto Sans JP',sans-serif;
 }
 
-.font-jp{
-  font-family: var('Noto Sans JP',sans-serif);
-}
 
 /* 標題 */
 .page_heading{
@@ -217,10 +214,10 @@ ul{
   -webkit-text-fill-color: transparent;
 }
 
-.about.specialty .spec_li:not(:last-of-type){
+.about .specialty .spec_li:not(:last-of-type){
   padding-bottom: 50px;
   margin-bottom: 50px;
-  border-bottom: 1px solid var(#E4E4E4);
+  border-bottom: 1px solid #E4E4E4;
 }
 
 .about .specialty .spec_li .heading{
@@ -276,10 +273,47 @@ ul{
   z-index: -1;
 }
 
-.img_box img .alignnon{
-  align-items: none;
+/* 返回鍵 */
+.back_top{
+  text-align: center;
+  margin-bottom: 100px;
 }
 
-.img_box img .size-full{
-  width: 100%;
+.btn_back{
+  display: inline-block;
+  padding: 0 0 .5em 0;
+  border-bottom: solid 2px #27c7ff;
+  transition: .3s;
+}
+
+.btn_back .txt{
+  padding: 0 0 0 28px;
+  line-height: 1.3em;
+  position: relative;
+  font-size: 14px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.btn_back .txt::before{
+  position: absolute;
+  content: '';
+  width: 18px;
+  height: 18px;
+  left: 0;
+  bottom: 0;
+  background-image: url(../../assets/img/common_icon_btn_bl.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
+a{
+  text-decoration: none;
+  outline: none;
+}
+
+.btn_back .txt{
+  color: #27c7ff;
+  font-weight: bold;
 }

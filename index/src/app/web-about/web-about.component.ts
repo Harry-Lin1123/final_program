@@ -23,6 +23,16 @@ export class WebAboutComponent {
   special01_1='../assets/img/about/special01_1.png';
   special01_2='../assets/img/about/special01_2.png';
   special01_3='../assets/img/about/special01_3.png';
+  special02_1='../assets/img/about/special02_1.png';
+  special02_2='../assets/img/about/special02_2.png';
+  special02_3='../assets/img/about/special02_3.png';
+  special02_4='../assets/img/about/special02_4.png';
+  special02_5='../assets/img/about/special02_5.png';
+  special02_6='../assets/img/about/special02_6.png';
+  special03_1='../assets/img/about/special03_1.png';
+  special03_2='../assets/img/about/special03_2.png';
+  special03_3='../assets/img/about/special03_3.png';
+
 
 
   title = 'ABOUT';
@@ -38,7 +48,11 @@ export class WebAboutComponent {
   sptext1_1 = '    世界NO.1のYouTubeチャンネル登録者数を誇り北米エリアで活躍する「がうる・ぐら（445万人）」を筆頭に、日本の「宝鐘マリン（308万人）」、インドネシアの「こぼ・かなえる（234万人）」など、世界各国を拠点に活動するトップタレントを抱えています。';
   sptext1_2 = '    ※2024年3月現在';
   sptext1_3 = '    また世界中でミート＆グリートを開催したり、エンターテインメントイベントに出展するなど、ファンと直接コミュニケーションする機会を創ったり、配信開始から高い人気を誇るショートアニメ「ホロのぐらふぃてぃ」を通じて世界中のファンに愛されるコンテンツを提供しています。';
-  sptext2 = '';
-  sptext3 = '';
+  sptext2_1 = '    在籍する80名以上のタレントは個性豊かで、毎日のライブ配信企画はもちろん、本格的な音楽活動や執筆活動など得意分野を生かしてマルチに活躍しています。';
+  sptext2_2 = '    ゲーム大会やバラエティ番組など多くのタレントを巻き込む企画・運営を一から行うプロデュース能力に長けたタレントから、オリコンやBillboardチャートの1位を席巻するアーティストまで、その活躍は「バーチャル」の世界に留まらずリアルのあらゆる領域に活動の場を広げています。    ';
+  sptext3_1 = '    コンテンツ開発にとどまらず、配信における技術研究を社内で行うことで、これまでにないバーチャルエンターテインメントの提供を可能にしました。';
+  sptext3_2 = '    VRやARといった先端領域で、独自の配信システムを開発。';
+  sptext3_3 = '    また、mocopi、meta quest2といったデバイスを用いた自宅での配信を可能にするため、先端技術の探求を怠りません。';
+  sptext3_4 = '    そして、3Dライブ配信のための複数人での高精度のトラッキングを実現するため、光学式モーションキャプチャシステムのViconを用いたスタジオ設備を所持しています。    ';
 
 }
