@@ -317,3 +317,7 @@ a{
   color: #27c7ff;
   font-weight: bold;
 }
+.col-md-6{
+  width: 50%;
+  height: auto;
+}
