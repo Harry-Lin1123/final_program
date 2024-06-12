@@ -417,3 +417,53 @@ header .lang_btn li a{
   color: #212121;
   background-color: #ffffffd1;
 }
+
+.global_nav.active .menu_box .left .txt_nav{
+  animation: p_up 1s ease;
+}
+
+.global_nav .menu_box .left .txt_nav{
+  margin-bottom: 20px;
+}
+
+@keyframes p_up {
+  0%{
+    transform: translateY(20px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+.global_nav .menu_box .left .txt_nav.nav_01 li a{
+  font-size: clamp(50px,6vw,90px);
+  line-height: 1.2em;
+}
+.global_nav .menu_box .left .txt_nav li a{
+  position: relative;
+  left: 0;
+  transition: .4s;
+}
+.global_nav .menu_box .left .txt_nav li a::before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0.5em;
+  background-color: #27c7ff;
+  border-radius: 2px;
+  z-index: -1;
+  transition: .6s;
+}
+
+.global_nav .menu_box .left .txt_nav.nav_02 li a {
+  font-size: 1.4em;
+  line-height: 1.8em;
+}
+
+.global_nav .menu_box .left .txt_nav.nav_03 li a {
+  font-size: 0.9em;
+  font-weight: 400;
+  line-height: 1.2em;
+}
