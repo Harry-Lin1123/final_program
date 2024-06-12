@@ -439,6 +439,8 @@ header .lang_btn li a{
 .global_nav .menu_box .left .txt_nav.nav_01 li a{
   font-size: clamp(50px,6vw,90px);
   line-height: 1.2em;
+  margin: 0;
+  padding: 0;
 }
 .global_nav .menu_box .left .txt_nav li a{
   position: relative;
@@ -461,10 +463,15 @@ header .lang_btn li a{
 .global_nav .menu_box .left .txt_nav.nav_02 li a {
   font-size: 1.4em;
   line-height: 1.8em;
+  padding: 0;
+  margin: 0;
 }
 
 .global_nav .menu_box .left .txt_nav.nav_03 li a {
   font-size: 0.9em;
   font-weight: 400;
   line-height: 1.2em;
+  margin: 0;
+  padding-left: 0;
+  padding-bottom: 0;
 }
