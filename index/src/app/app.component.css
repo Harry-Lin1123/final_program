@@ -385,6 +385,7 @@ header .nav_trigger_outer.active .nav_trigger:after{
 
 .bogo-language-switcher{
   display: flex;
+  margin: 0;
   flex-direction: row-reverse;
 }
 

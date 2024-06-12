@@ -26,20 +26,21 @@ export class AppComponent {
 
     nav_menu1='assets/img/nav_menu/nav_menu1.png';
 
-    nav_011='ABOUT';
-    nav_012='TALENT';
-    nav_013='NEWS';
-    nav_014='AUDITION';
-    nav_021='COLLABORATION';
-    nav_022='OFFICIAL SHOP';
-    nav_023='HOLODULE';
-    nav_031='会社概要';
-    nav_032='プライバシーポリシー';
-    nav_033='未成年の方々へのお願い';
-    nav_034='二次創作ガイドライン';
-    nav_035='よくある質問';
-    nav_036='サポーターガイドライン';
 
-
+    nav1=[{link:'ABOUT'},
+      {link:'TALENT'},
+      {link:'NEWS'},
+      {link:'AUDITION'},
+    ]
+    nav2=[{link:'COLLABORATION'},
+      {link:'OFFICIAL SHOP'},
+      {link:'HOLODULE'},
+    ]
+    nav3=[{link:'会社概要'},
+      {link:'プライバシーポリシー'},
+      {link:'未成年の方々へのお願い'},
+      {link:'よくある質問'},
+      {link:'サポーターガイドライン'},
+    ]
 
 }
